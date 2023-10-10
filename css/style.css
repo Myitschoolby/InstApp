@@ -2,10 +2,125 @@
 ::after,
 ::before {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 16px;
+
+    background-color: #ededed;
+}
+
+ul {
+    list-style: none;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow-y: auto;
+}
+
+.posts__list {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.posts__list li {
+    position: relative
+}
+
+.posts__list li.ico::before {
+    content: '';
+    display: block;
+
+    width: 2.5em;
+    height: 2.5em;
+
+    min-width: 24px;
+    min-height: 24px;
+
+    max-width: 48px;
+    max-height: 48px;
+
+    background-size: cover;
+    background-position: top center;
+
+    position: absolute;
+    top: 5%;
+    right: 5%;
+} 
+
+.posts__list li.ico_video::before {
+    background-image: url(/images/ico_video.svg);
+}
+
+.posts__list li.ico_posts::before {
+    background-image: url(/images/ico_posts.svg);
+}
+
+.posts__list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.posts__list img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    background-color: #fff;
+
+    padding: 15px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item span.ico {
+    display: block;
+    
+    width: 32px;
+    height: 32px;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.nav__item span.ico_home {
+    background-image: url(/images/ico_home.svg);
+}
+
+.nav__item span.ico_search {
+    background-image: url(/images/ico_search.png);
+}
+
+.nav__item span.ico_reals {
+    background-image: url(/images/ico_reals.svg);
+}
+
+.nav__item span.ico_store {
+    background-image: url(/images/ico_store.svg);
+}
+
+.nav__item span.ico_user {
+    background-image: url(/images/ico_user.png);
 }
