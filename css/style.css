@@ -9,32 +9,61 @@ body {
     font-size: 13px;
     line-height: 16px;
 }
-
-.app {
+html {
     width: 390px;
     margin: 0 auto;
 }
 
 .username__description_name {
     color: #000;
-    font-family: SF UI Display;
     font-size: 13px;
     font-weight: 700;
     line-height: 17px;
 }
 .username__description_category {
     color: #6E6E6E;
-    font-family: SF UI Display;
     font-size: 13px;
     font-weight: 400;
     line-height: 17px;
 }
-
+.username__description_text {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0 auto;
+}
+.username__link {
+    color: #004C8B;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px; 
+}
 .username__description_followed {
-    display: flex;
-    img {
-        border-radius: 25px;
-    }
+    margin: 12px auto;
+    display: flex;   
+    position: relative;
+}
+.followed {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    position: absolute;
+}
+.followed:nth-child(1){
+    left: 0px;
+}
+.followed:nth-child(2){
+    left: 15px;
+}
+.followed:nth-child(3){
+    left: 30px;
+}
+.username__description_followed-text {
+    margin-left: 66px;
+
+}
+.username__description_followed-text span {
+    font-weight: 700;
 }
 
 .username__btns {
@@ -50,8 +79,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 6px;
-}
-.btns--button-bottom {
     width: 105px;
     padding: 7px auto;
+}
+button--icon {
+    background: url(/images/follow__icon.png no-repeat);
 }
