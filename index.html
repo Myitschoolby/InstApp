@@ -4,59 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram App</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/username-data.css">
+    <link rel="stylesheet" href="/css/media.css">
 </head>
 <body>
 
-    <div class="app">
-        <div class="title"></div>
-        <div class="username">
-            <div class="username__header"></div>
-            <div class="username__description"></div>
-            <div class="username__btns"></div>
+<div class="app">
+    <div class="header">
+        <a class="header__return">
+            <img src="/images/return.svg" alt="#">
+        </a>
+        <h1 class="header__title">username</h1>
+        <div class="header__menu">
+            <button class="header__notifications">
+                <img src="/images/notifications.svg" alt="#">
+            </button>
+            <button class="header__more">
+                <img src="/images/more.svg" alt="#">
+            </button>
         </div>
-        <div class="highlights">
-            <div class="container">
-                <div class="highlights__block">
-                    <div class="highlights__box">
-                        <div class="highlights__img">
-                            <img src="../images/dog1.png">
-                        </div>
-                        <h3 class="highlights__text">Text  here</h3>
-                    </div>
-                     <div class="highlights__box">
-                        <div class="highlights__img">
-                            <img src="../images/dog2.png">
-                        </div>
-                        <h3 class="highlights__text">Text  here</h3>
-                    </div>
-                    <div class="highlights__box">
-                        <div class="highlights__img">
-                            <img src="../images/dog3.png">
-                        </div>
-                         <h3 class="highlights__text">Text  here</h3>
-                    </div>
-                    <div class="highlights__box">
-                        <div class="highlights__img">
-                            <img src="../images/dog4.png">
-                        </div>
-                        <h3 class="highlights__text">Text  here</h3>
-                    </div>
-                     <div class="highlights__box">
-                        <div class="highlights__img">
-                            <img src="../images/dog5.png">
-                        </div>
-                        <h3 class="highlights__text">Text  here</h3>
-                    </div>
-            </div>
-            </div>
-        </div>
-        <div class="posts">
-            <div class="posts__nav"></div>
-            <div class="posts__list"></div>
-        </div>
-        <div class="nav"></div>
     </div>
-    
+    <div class="username">
+        <div class="username__data username-data">
+            <div class="username__avatar"></div>
+            <div class="username-data__info">
+                <div class="block">
+                    <span class="block__content">1,234</span>
+                    <span class="block__name">Posts</span>
+                </div>
+                <div class="block">
+                    <span class="block__content">5,678</span>
+                    <span class="block__name">Followers</span>
+                </div>
+                <div class="block">
+                    <span class="block__content">9,101</span>
+                    <span class="block__name">Following</span>
+                </div>
+            </div>
+        </div>
+        <div class="username__description">
+            <div class="username__description_name">Username</div>
+            <div class="username__description_category">Category/Genre text</div>
+            <p class="username__description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt #hashtag</p>
+            <a href="#" class="username__links">Link goes here</a>
+            <div class="username__description_followed">
+                <img class ="followed" src="/images/Photo-1.jpg" alt="img1">
+                <img class ="followed" src="/images/Photo-2.jpg" alt="img2">
+                <img class ="followed" src="/images/Photo-3.jpg" alt="img3">
+                <div class="username__description_followed-text">Followed by <span>username, username</span> <br>and <span>100 others </span></div>
+            </div>
+        </div>
+        <div class="username__btns">
+            <button class="btns--button-top">Follow</button>
+            <div class="btns--button-bottom">
+            <button class="button">Message</button>
+            <button class="button">Subscribe</button>
+            <button class="button">Contact</button>
+            <button class="button--icon"><img src="/images/follow__icon.png"></button>
+        </div>
+    </div>
+     <div class="highlights">
+        <div class="container">
+            <div class="highlights__block">
+                <div class="highlights__box">
+                    <div class="highlights__img">
+                        <img src="../images/dog1.png">
+                    </div>
+                    <h3 class="highlights__text">Text  here</h3>
+                </div>
+                 <div class="highlights__box">
+                    <div class="highlights__img">
+                        <img src="../images/dog2.png">
+                    </div>
+                    <h3 class="highlights__text">Text  here</h3>
+                </div>
+                <div class="highlights__box">
+                    <div class="highlights__img">
+                        <img src="../images/dog3.png">
+                    </div>
+                     <h3 class="highlights__text">Text  here</h3>
+                </div>
+                <div class="highlights__box">
+                    <div class="highlights__img">
+                        <img src="../images/dog4.png">
+                    </div>
+                    <h3 class="highlights__text">Text  here</h3>
+                </div>
+                 <div class="highlights__box">
+                    <div class="highlights__img">
+                        <img src="../images/dog5.png">
+                    </div>
+                    <h3 class="highlights__text">Text  here</h3>
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="posts">
+        <div class="posts__nav"></div>
+        <ul class="posts__list">
+            <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#"><span class="ico ico_home"></span></a></li>
+            <li class="nav__item"><a href="#"><span class="ico ico_search"></span></a></li>
+            <li class="nav__item"><a href="#"><span class="ico ico_reals"></span></a></li>
+            <li class="nav__item"><a href="#"><span class="ico ico_store"></span></a></li>
+            <li class="nav__item"><a href="#"><span class="ico ico_user"></span></a></li>
+        </ul>
+    </div>
+</div>
+
 </body>
 </html>
