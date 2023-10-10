@@ -1,0 +1,55 @@
+.username__data {
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+/* TODO: round avatar & border (::before) */
+
+.username__avatar {
+    min-width: 75px;
+    max-width: 75px;
+    min-height: 75px;
+    max-height: 75px;
+    margin: 15px;
+    background: url("/images/avatar.png") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.username__avatar::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    left: calc(-15px / 2);
+    top: calc(-15px / 2);
+    background: none;
+    border: 3px solid;
+    border-image: linear-gradient(to left bottom, #C913B9, #F9373F, #FECD00);
+    border-image-slice: 1;
+}
+
+.username-data__info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block__content {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.block__name {
+    font-size: 14px;
+    font-weight: 400;
+}

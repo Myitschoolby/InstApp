@@ -4,51 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram App</title>
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/username-data.css">
     <link rel="stylesheet" href="/css/media.css">
 </head>
 <body>
 
-    <div class="app">
-        <div class="title"></div>
-        <div class="username">
-            <div class="username__header"></div>
-            <div class="username__description"></div>
-            <div class="username__btns"></div>
-        </div>
-        <div class="highlights"></div>
-        <div class="posts">
-            <div class="posts__nav"></div>
-            <ul class="posts__list">
-                <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-                <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
-            </ul>
-        </div>
-        <div class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#"><span class="ico ico_home"></span></a></li>
-                <li class="nav__item"><a href="#"><span class="ico ico_search"></span></a></li>
-                <li class="nav__item"><a href="#"><span class="ico ico_reals"></span></a></li>
-                <li class="nav__item"><a href="#"><span class="ico ico_store"></span></a></li>
-                <li class="nav__item"><a href="#"><span class="ico ico_user"></span></a></li>
-            </ul>
+<div class="app">
+    <div class="header">
+        <a class="header__return">
+            <img src="/images/return.svg" alt="#">
+        </a>
+        <h1 class="header__title">username</h1>
+        <div class="header__menu">
+            <button class="header__notifications">
+                <img src="/images/notifications.svg" alt="#">
+            </button>
+            <button class="header__more">
+                <img src="/images/more.svg" alt="#">
+            </button>
         </div>
     </div>
-    
+    <div class="username">
+        <div class="username__data username-data">
+            <div class="username__avatar"></div>
+            <div class="username-data__info">
+                <div class="block">
+                    <span class="block__content">1,234</span>
+                    <span class="block__name">Posts</span>
+                </div>
+                <div class="block">
+                    <span class="block__content">5,678</span>
+                    <span class="block__name">Followers</span>
+                </div>
+                <div class="block">
+                    <span class="block__content">9,101</span>
+                    <span class="block__name">Following</span>
+                </div>
+            </div>
+        </div>
+        <div class="username__description"></div>
+        <div class="username__btns"></div>
+    </div>
+    <div class="highlights"></div>
+    <div class="posts">
+        <div class="posts__nav"></div>
+        <ul class="posts__list">
+            <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_video"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li class="ico ico_posts"><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/400" alt="#"></a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#"><span class="ico ico_home"></span></a></li>
+            <li class="nav__item"><a href="#"><span class="ico ico_search"></span></a></li>
+            <li class="nav__item"><a href="#"><span class="ico ico_reals"></span></a></li>
+            <li class="nav__item"><a href="#"><span class="ico ico_store"></span></a></li>
+            <li class="nav__item"><a href="#"><span class="ico ico_user"></span></a></li>
+        </ul>
+    </div>
+</div>
+
 </body>
 </html>
