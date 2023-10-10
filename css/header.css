@@ -1,0 +1,43 @@
+.header * {
+    background: none;
+    border: none;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px 12px;
+    min-height: 40px;
+}
+
+.header__return {
+    margin-left: 2px;
+}
+
+.header__title {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.header__menu {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: 72px;
+    width: 100%;
+}
+
+.header__more {
+    display: flex;
+    align-items: center;
+}
+
+
+
