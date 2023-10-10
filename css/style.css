@@ -10,6 +10,33 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 16px;
+}
+
+.btns--button-top {
+    width: 100%;
+    background: #1FA1FF;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px; 
+}
+.btns--button-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+    
+}
+
+button {
+    width: 105px;
+}
+button--icon {
+    width: 32px;
+    height: 39px;
 
     background-color: #ededed;
 }
@@ -24,6 +51,63 @@ ul {
     margin: 0 auto;
     position: relative;
     overflow-y: auto;
+}
+
+.username__description_name {
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 17px;
+}
+.username__description_category {
+    color: #6E6E6E;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.username__description_text {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0 auto;
+}
+.username__link {
+    color: #004C8B;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px; 
+}
+.username__description_followed {
+    margin: 12px auto;
+    display: flex;   
+    position: relative;
+}
+.followed {
+    border: 2px solid #fff;
+    border-radius: 25px;
+    position: absolute;
+}
+.followed:nth-child(1){
+    left: 0px;
+}
+.followed:nth-child(2){
+    left: 15px;
+}
+.followed:nth-child(3){
+    left: 30px;
+}
+.username__description_followed-text {
+    margin-left: 66px;
+
+}
+.username__description_followed-text span {
+    font-weight: 700;
+}
+
+.username__btns {
+    display: flex;
+    flex-direction: column;
 }
 
 .posts__list {
